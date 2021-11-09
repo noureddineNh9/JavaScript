@@ -1,0 +1,76 @@
+
+html{
+    box-sizing: border-box; /* ! if you add a padding, it would make that more than 100%  */
+}
+
+body{
+    margin: 0;
+    min-height: 100vh;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.form{
+    margin-top: 100px;
+    padding: 20px 30px;
+    width: 100%;
+    max-width: 600px;
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    animation: scale .3s ease-out;
+
+}
+
+.__form-control{
+	border: 1px solid #ccc;
+	border-radius: 0;
+	background: none;
+    margin-bottom: 20px;
+    height: 40px;
+}
+
+.__form-control:active, :focus{
+    outline: none;
+    box-shadow: none;
+    border-color: #000;
+    background-color: rgba(167, 167, 167, 0.075);
+
+}
+
+.__form-control:valid {
+    border-color: #000;
+}
+
+@keyframes scale{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
+
+._btn{
+    padding: 3px 15px;
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color: transparent;
+    color: black;
+    transition: all .3s;
+    
+    margin: auto;
+}
+
+._btn:hover{
+    transform: scale(1.05);
+}

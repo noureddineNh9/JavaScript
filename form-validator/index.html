@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./favicon.ico" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validator</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">hello</h1>
+        
+
+
+        <form id="form" class="form">
+            <div id="message" class="text-center">
+            </div>
+            <div class="d-flex">
+                <input type="text" class="__form-control col-12" placeholder="name" id="name"
+                    required maxlength="30" pattern="[0-9a-zA-Z]{3}">
+            </div>
+            <div class="d-flex">
+                <input type="email" class="__form-control col-12" placeholder="email" id="email"
+                    required >
+            </div>
+            <div class="d-flex">
+                <input type="password" class="__form-control col-12" placeholder="password" id="password1"
+                    required pattern="*{1,5}">
+            </div>
+            <div class="d-flex">
+                <input type="password" class="__form-control col-12" placeholder="password" id="password2"
+                    required>
+            </div>
+            <div class="d-flex">
+                <input type="tel" class="__form-control col-12" placeholder="tel" id="tel"
+                    required>
+            </div>
+            <div class="btn-container">
+                <button type="submit" class="_btn" id="submitButton">
+                    Submit
+                </button>
+              </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>
